@@ -13,7 +13,7 @@
         <TextBox x:Name="nameTexBox" HorizontalAlignment="Left" Margin="100,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" Height="23"/>
         <Label Content="電話" HorizontalAlignment="Left" Margin="55,75,0,0" VerticalAlignment="Top" Width="40" Height="35" Foreground="Red"/>
         <TextBox x:Name="telTextBox"  HorizontalAlignment="Left" Margin="100,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" Height="24"/>
-        <Button Content="確認" HorizontalAlignment="Left" Margin="282,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="47" Width="83">
+        <Button Content="確認" HorizontalAlignment="Left" Margin="282,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="47" Width="83" Click="Button_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

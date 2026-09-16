@@ -20,15 +20,6 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
-        private void okButton_Click(object sender, RoutedEventArgs e)
-        {
-            string name = nameTexBox.Text;
-            string telphone = telTextBox.Text;
-            string message = $"Name: {name}\nTelphone:{telphone}";
-            MessageBox.Show(message, "我的資訊", MessageBoxButton.OK);
-        }
-
-       
         private void egth_Click(object sender, RoutedEventArgs e)
         {
             int n = int.Parse(numberTextBox.Text);
@@ -42,6 +33,14 @@ namespace WpfApp1
                 result += "\n";
             }
             resultTextBlock.Text = result;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string name = nameTexBox.Text.Trim();
+            string phone = telTextBox.Text.Trim();
+            string message = $"【使用者資訊】\n姓名：{name}\n電話：{phone}";
+            MessageBox.Show(message, "使用者資訊確認", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
